@@ -1,0 +1,18 @@
+{{!< default}}
+
+{{! Main content, brief description of the club & blog post list goes here }}
+<section id="main-content" class="flex-content">
+    <div class="row">
+        {{#author}}
+        <div class="small-12 columns bottom-divider">
+            <h1>All posts by {{name}}</h1>
+        </div>
+        {{/author}}
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            {{! Post template (w/ no author) goes here }}
+            {{> "post_loop_na"}}
+        </div>
+    </div>
+</section>
