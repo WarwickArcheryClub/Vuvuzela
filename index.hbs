@@ -1,0 +1,22 @@
+{{!< default}}
+
+{{! Import the carousel images }}
+{{> "carousel"}}
+
+{{! Main content, brief description of the club & blog post list goes here }}
+<section id="main-content" class="flex-content">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>{{@blog.title}}</h1>
+            <p>{{@blog.description}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Latest news</h1>
+
+            {{! Post template goes here }}
+            {{> "post_loop"}}
+        </div>
+    </div>
+</section>

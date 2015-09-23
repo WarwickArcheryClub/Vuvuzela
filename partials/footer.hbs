@@ -1,0 +1,25 @@
+{{! Website footer partial }}
+<footer class="footer">
+    <div class="row">
+        <div class="small-12 large-3 columns">
+            <h5>University of Warwick Archery Club</h5>
+            <ul class="social-list">
+                <li><a href="https://www.facebook.com/universityofwarwickarcheryclub"><span class="fa fa-facebook-square fa-2x"></span></a></li>
+                <li><a href="https://twitter.com/uwacfeed"><span class="fa fa-twitter-square fa-2x"></span></a></li>
+                <li><a href="{{@blog.url}}/rss/"><span class="fa fa-rss-square fa-2x"></span></a></li>
+            </ul>
+        </div>
+        <div class="small-12 large-9 columns">
+            <ul class="sitemap-list">
+                {{navigation}}
+                <li><a href="/admin">Ghost</a></li>
+                <li><a href="/records/admin">Admin</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <p class="credits text-center">
+            Copyright &copy; University of Warwick Archery Club. Built by <a href="https://github.com/davidjrichardson/">David Richardson</a>. Powered by <a href="https://ghost.org">Ghost</a> and <a href="http://flask.pocoo.org/">Flask</a>.
+        </p>
+    </div>
+</footer>

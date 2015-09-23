@@ -1,0 +1,27 @@
+{{!< default}}
+
+{{! Pull data from the post }}
+{{#post}}
+
+<section id="main-content" class="flex-content">
+    <div class="row">
+        {{#if image}}
+            <div class="row">
+                <div class="small-12 columns">
+                    <img class="post-header-img" src="{{image}}" alt="{{title}}" />
+                </div>
+            </div>
+        {{/if}}
+        <article class="small-12 columns {{post_class}}">
+            <header>
+                <h1 class="text-left">{{title}}</h1>
+                <h6>{{author}} on <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></h6>
+            </header>
+            <section>
+                {{content}}
+            </section>
+        </article>
+    </div>
+</section>
+
+{{/post}}
